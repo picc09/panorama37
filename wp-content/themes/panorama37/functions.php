@@ -167,6 +167,7 @@ function twentythirteen_scripts_styles() {
     // bootstrap js
     wp_enqueue_script( 'bootstrap-script', get_template_directory_uri() . '/bootstrap3/js/bootstrap.js', array( 'jquery' ), 'v' . rand(), true );
 
+    wp_enqueue_script( 'holder-script', get_template_directory_uri() . '/js/holder.js', array( 'jquery' ), 'v' . rand(), true );
 
 
 

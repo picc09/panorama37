@@ -51,20 +51,20 @@ footer{background-color: #cccccc}
 -------------------------------------------------- */
 
 /* Pad the edges of the mobile views a bit */
-.marketing {
+.associations {
   padding-left: 15px;
   padding-right: 15px;
 }
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
+.associations .col-lg-4 {
   text-align: center;
   margin-bottom: 20px;
 }
-.marketing h2 {
+.associations h2 {
   font-weight: normal;
 }
-.marketing .col-lg-4 p {
+.associations .col-lg-4 p {
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -77,7 +77,7 @@ footer{background-color: #cccccc}
   margin: 80px 0; /* Space out the Bootstrap <hr> more */
 }
 
-/* Thin out the marketing headings */
+/* Thin out the associations headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
@@ -105,7 +105,7 @@ footer{background-color: #cccccc}
 @media (min-width: 768px) {
 
   /* Remove the edge padding needed for mobile */
-  .marketing {
+  .associations {
     padding-left: 0;
     padding-right: 0;
   }
