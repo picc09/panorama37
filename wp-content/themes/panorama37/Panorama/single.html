@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Bootstrap theme -->
+    <link href="dist/css/bootstrap-theme.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+
+    <link href="assets/css/carousel.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+
+    <![endif]-->
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Panorama logo</a>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">chi siamo<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">fondatori</a></li>
+                        <li><a href="#">organigramma</a></li>
+                        <li><a href="#">storia</a></li>
+                        <li class="divider"></li>
+                        <li class="dropdown-header">eventi rilevanti (categoria wp)</li>
+                        <li><a href="#">xxxxx</a></li>
+                        <li><a href="#">xxxxx</a></li>
+                    </ul>
+                </li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">media</a></li>
+
+                <li><a href="#contact">Contatti</a></li>
+            </ul>
+        </div><!--/.nav-collapse -->
+    </div>
+</div>
+<!-- Carousel
+================================================== -->
+<div id="myCarousel" class="carousel slide">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+        <div class="item active">
+            <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:First slide" alt="First slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Sign up today</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Second slide" alt="Second slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Learn more</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <img src="data:image/png;base64," data-src="holder.js/100%x500/auto/#777:#7a7a7a/text:Third slide" alt="Third slide">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn btn-large btn-primary" href="#">Browse gallery</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+</div><!-- /.carousel -->
+
+
+
+<div class="container marketing">
+
+
+<h3  id="storia">notizia o singolo articolo</h3>
+<div class="col-md-12">
+    <div class="col-md-8"><p>stuff</p></div>
+    <div class="col-md-4">cronologia notizie o link alternativi</div>
+</div>
+
+
+
+
+
+</div>
+<footer>
+    <hr class="featurette-divider" id="contact">
+    <div class="container">
+        <h3>gmaps pre footer</h3>
+        <p>di seguito footer, butta in gmap uno script per gestire streetview e/o routing e rimuovi l'interazione dello zoom senno scazza con lo scrolling.</p>
+    </div>
+    <div class="container">
+        <div id="map-canvas"></div>
+    </div>
+    <div class="container">
+        <h2>Contatti - sempre in footer, almeno non devi dedicarci una pagina e sono sempre a portata di mano</h2>
+
+        <form class="input-group col-md-6">
+            <div class="input-group col-md-12">
+                <input type="text" class="form-control" placeholder="Email"></div>
+            <div class="input-group col-md-12">
+                <input type="text" class="form-control" placeholder="nome"></div>
+            <div class="input-group col-md-12">
+
+                <input type="text" class="form-control" placeholder="telefono"></div>
+            <div class="input-group col-md-12">
+
+                <textarea type="text" class="form-control" placeholder="inserisci messggio"></textarea></div>
+
+            <button type="button" class="btn btn-default">invia</button>
+        </form>
+        <div class="col-md-6">
+            <ul class="nav nav-tabs">
+                <li class=" active"><a href="#Segreteria" data-toggle="tab">Segreteria</a></li>
+                <li><a href="#Presidenza" data-toggle="tab">Presidenza</a></li>
+                <li><a href="#Tecnico" data-toggle="tab">Tecnico</a></li>
+
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" id="Segreteria">
+                    <h3 class="text-center"> contatto segreteria</h3>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">contatti a seguire</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item clearfix">
+                            <div class="col-md-3">
+                                contattaci
+                            </div>
+                            <form class="input-group col-md-9">
+                                <input type="text" class="form-control round-top" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="nome">
+                                <input type="text" class="form-control" placeholder="telefono">
+                                <textarea type="text" class="form-control round-bottom" placeholder="inserisci messggio"></textarea>
+
+                            </form>
+                            <button type="button" class="btn btn-default">invia</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="Presidenza">
+                    <h3 class="text-center"> contatto presidenza</h3>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">contatti a seguire</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item clearfix">
+                            <div class="col-md-3">
+                                contattaci
+                            </div>
+                            <form class="input-group col-md-9">
+                                <input type="text" class="form-control round-top" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="nome">
+                                <input type="text" class="form-control" placeholder="telefono">
+                                <textarea type="text" class="form-control round-bottom" placeholder="inserisci messggio"></textarea>
+
+                            </form>
+                            <button type="button" class="btn btn-default">invia</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-pane" id="Tecnico">
+                    <h3 class="text-center"> contatto tecnico</h3>
+
+                    <ul class="list-group">
+                        <li class="list-group-item">contatti a seguire</li>
+                        <li class="list-group-item">Dapibus ac facilisis in</li>
+                        <li class="list-group-item">Morbi leo risus</li>
+                        <li class="list-group-item clearfix">
+                            <div class="col-md-3">
+                                contattaci
+                            </div>
+                            <form class="input-group col-md-9">
+                                <input type="text" class="form-control round-top" placeholder="Email">
+                                <input type="text" class="form-control" placeholder="nome">
+                                <input type="text" class="form-control" placeholder="telefono">
+                                <textarea type="text" class="form-control round-bottom" placeholder="inserisci messggio"></textarea>
+
+                            </form>
+                            <button type="button" class="btn btn-default">invia</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</footer>
+<div class="container text-center">dati vari centrati</div>
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="assets/js/jquery.js"></script>
+<script src="dist/js/bootstrap.min.js"></script>
+<script src="assets/js/holder.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+<script>
+    var map;
+    function initialize() {
+        var mapOptions = {
+            zoom: 8,
+            center: new google.maps.LatLng(-34.397, 150.644),
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+        };
+        map = new google.maps.Map(document.getElementById('map-canvas'),
+                mapOptions);
+    }
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+
+</script>
+<script>
+    $(function () {
+        $('#myTab a:last').tab('show')
+    })
+</script>
+</body>
+</html>

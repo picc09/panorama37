@@ -1,0 +1,14 @@
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /WPPanorama/
+RewriteRule ^index\.php$ - [L]
+RewriteRule ^assets/(.*) /WPPanorama/wp-content/themes/roots/assets/$1 [QSA,L]
+RewriteRule ^plugins/(.*) /WPPanorama/wp-content/plugins/$1 [QSA,L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /WPPanorama/index.php [L]
+</IfModule>
+
+# END WordPress
