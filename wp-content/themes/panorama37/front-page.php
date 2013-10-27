@@ -44,5 +44,25 @@
     </div><!-- /.row -->
 </div>
 
+<div class="container">
+    <?php $query = new WP_Query(array( // Creating a custom Query
+        'post__in'  => get_option( 'sticky_posts' ) // Only including posts that are sticky
+    )); ?>
+
+    <?php if($query->have_posts()) : ?><?php while($query->have_posts()) : $query->the_post(); ?>
+
+        <?php get_template_part('content',get_post_format()); ?>
+
+    <?php endwhile; ?>
+
+    <?php else : ?>
+
+        <h1>No Content Could Be Found</h1>
+
+        <p>No content could be found for your query.</p>
+
+    <?php endif; ?>
+</div>
+
 <?php get_sidebar(); ?>
 <?php get_footer(); ?>

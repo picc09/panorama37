@@ -19,20 +19,13 @@
             <div class="container">
                 <h2>Contatti</h2>
 
-                <form class="input-group col-md-6">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="form-control" placeholder="Email"></div>
-                    <div class="input-group col-md-12">
-                        <input type="text" class="form-control" placeholder="nome"></div>
-                    <div class="input-group col-md-12">
-
-                        <input type="text" class="form-control" placeholder="telefono"></div>
-                    <div class="input-group col-md-12">
-
-                        <textarea type="text" class="form-control" placeholder="inserisci messggio"></textarea></div>
-
-                    <button type="button" class="btn btn-default">invia</button>
-                </form>
+                <div class="col-md-6">
+                    Associazione Panorama <br/>
+                    Telefono:<br/>
+                    Fax:<br/>
+                    presidenza@associazionepanorama.it<br/>
+                    segreteria@associazionepanorama.it<br/>
+                </div>
                 <div class="col-md-6">
                     <ul class="nav nav-tabs">
                         <li class=" active"><a href="#Segreteria" data-toggle="tab">Segreteria</a></li>
@@ -113,7 +106,7 @@
 
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
     <script>
-        (function() {
+        (function($) {
             var map;
             google.maps.event.addDomListener(window, 'load', function initialize() {
                 var coords = new google.maps.LatLng(45.961636,12.656359);
@@ -130,7 +123,12 @@
                     title:"Associazione Panorama"
                 });
             });
-        })();
+
+            $("#masthead ul li a[href^='#']").on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
+            });
+        })(jQuery);
     </script>
 </body>
 </html>
